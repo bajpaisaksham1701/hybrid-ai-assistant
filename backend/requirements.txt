@@ -5,6 +5,10 @@ langchain
 langchain-groq
 langchain-huggingface
 langchain-chroma
+langchain-community
+langchain-classic
+langchain-core
+langchain-text-splitters
 sentence-transformers
 chromadb
 pypdf
