@@ -43,7 +43,7 @@ export default function App() {
     formData.append('file', file)
 
     try {
-      const response = await axios.post('http://localhost:8000/upload', formData)
+      const response = await axios.post('https://rag-backend-c1vp.onrender.com/upload', formData)
       setCollectionId(response.data.collection_id)
     } catch (error) {
       console.error("Upload failed", error)
@@ -69,7 +69,7 @@ export default function App() {
     setIsTyping(true)
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', {
+      const response = await axios.post('https://rag-backend-c1vp.onrender.com/chat', {
         session_id: sessionId,
         message: userMsg.content,
         collection_id: collectionId
